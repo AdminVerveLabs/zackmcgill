@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Omnie</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* page-specific: figure spacing and the four-box cadence flow */
+  .fig{margin:22px 0 6px}
+  .fig svg{display:block;max-width:100%;height:auto}
+  .fig .cap{margin:8px 0 0}
+  .flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:22px 0 6px;max-width:720px}
+  .flow .step{background:var(--paper);border:1px solid var(--line);padding:12px 12px 12px;min-width:0;position:relative;font-size:13.5px;line-height:1.4}
+  .flow .step .k{font-family:var(--mono);font-size:11px;color:var(--fg3);letter-spacing:.07em;text-transform:uppercase;display:block;margin-bottom:6px}
+  .flow .step .k b{color:var(--accent);font-weight:500}
+  .flow .step::after{content:"\2192";position:absolute;right:-9px;top:50%;transform:translateY(-50%);font-family:var(--mono);color:var(--fg3);background:var(--bg);font-size:13px;line-height:1}
+  .flow .step:last-child::after{content:none}
+  @media (max-width:640px){
+    .flow{grid-template-columns:1fr;gap:8px}
+    .flow .step::after{content:"\2193";right:auto;left:14px;top:auto;bottom:-10px;transform:none}
+    .flow .step:last-child::after{content:none}
+  }
+</style>
+</head>
+<body>
+<nav class="nav wrap">
+  <a class="brand" href="index.html">Zack McGill</a>
+  <ul>
+    <li><a href="index.html">Overview</a></li>
+    <li><a href="model.html">Operating model</a></li>
+    <li><a href="bwz.html">Black &amp; White Zebra</a></li>
+    <li><a href="omnie.html" aria-current="page">Omnie</a></li>
+    <li><a href="chef-joey.html">Chef Joey</a></li>
+    <li><a href="industrial.html">Industrial EPC</a></li>
+    <li><a href="pitch.html">How I'd like to start</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+  <header class="hero">
+    <div class="eyebrow">Omnie Integrated Services · GTM, RevOps &amp; Sales Manager, employee #2 · Jan 2021 – Jan 2023</div>
+    <h1>Build the revenue system from zero, then make it run without me.</h1>
+    <p class="lede">A bootstrapped company that plugged a complete customer-service function into an online store: the people, on phone, chat and email, and the technology underneath them, set up and run on Zendesk or Gorgias. On my first day there was a founder who had never sold, two account executives, a CRM with nothing in it, and a PowerPoint. Two years later there was a written ICP that had been tested rather than guessed, an outbound engine reaching thousands of new prospects a month, a defined sales journey and onboarding path, an outbound agency and a BDR I had hired and trained, and $2M+ closed by the two account executives, of whom I was one.</p>
+    <div class="meta">
+      <span>Employee #2, first commercial hire</span>
+      <span>Angel-funded, bootstrapped in practice</span>
+      <span>Online stores, mostly Shopify</span>
+    </div>
+  </header>
+
+  <div class="rail">
+    <div><div class="n">$0 → $2M+</div><div class="l">Closed revenue in two years, from nothing, by two account executives at about a 15% close rate; I was one of them</div></div>
+    <div><div class="n">3,500</div><div class="l">Net-new prospects contacted in the first month of the outbound engine; 2,500+ a month after that</div></div>
+    <div><div class="n">140+</div><div class="l">Meetings booked in the first eight months; 40–60 a month at run rate, peak ~70</div></div>
+    <div><div class="n">~5%</div><div class="l">Reply rate at 60%+ open rates, with the domains kept clean; prep per prospect from 20 minutes to 2</div></div>
+  </div>
+
+  <div class="col">
+    <h2>Situation</h2>
+    <p><b>A product, a founder who had never sold, and a PowerPoint.</b> The product was a customer-service function a store could plug in whole: agents covering phone, chat and email, and the help-desk stack they worked in, Zendesk or Gorgias, set up and run by us, so an owner-operated store got omnichannel support without hiring or building any of it. The founder had built that operation inside another company; its investors liked the idea enough to give him a small amount of money to try it on its own. He hired two account executives, and on day one that was the company. The deck had been written to explain the idea, not to sell it. There was no sales journey, no onboarding path, no written ICP, only hypotheses, and no systems beyond an empty CRM. With two sellers and almost no capital, everything that a revenue team needs in order to run had to be built, in an order that produced revenue while it was being built.</p>
+
+    <h2>The decision</h2>
+    <p><b>Build reach first, because two people cannot find a market by hand.</b> Before we knew who the customer was, we needed to be able to test who the customer was, which meant contacting hundreds of net-new prospects a week with two sellers. So the first thing I built was the outbound engine: list building, domain security and compliance, programmatic personalization of every email (this was before AI made that easy), and analytics on the back end so we could see what was working by segment. Within a month we had contacted about 3,500 new prospects.</p>
+    <p><b>Test the ICP rather than argue about it.</b> I thought technology companies would be the market. The founder thought online e-commerce stores would. We ran both for two months, calling and emailing in parallel, and the data said the founder was right: e-commerce stores had far lower technical requirements for customer service, and they converted. From there the profile narrowed with each round of testing until it was specific: one or two owners, often a couple; low overhead, frequently drop-shipping; more than about $200,000 a year in sales; on Shopify, where our success rate was markedly higher; and weak customer service already, long response times, often email only. Once that was the list, everything started to move.</p>
+    <p><b>Standardize the journey so that the system, not the individual, carried the number.</b> A fifteen-minute discovery call, a longer first presentation, a personalized presentation, then the close; and after the signature, a defined onboarding path so a new customer did not depend on whoever had sold them. With the journey written down I could hire an outbound agency to feed it and hire and train our first BDR to work it. The forecast ran on coverage: a deliberately safe five-to-one rule, five dollars of pipeline at the top for every dollar of target, and the list-building cadence was set to keep it there.</p>
+
+    <h2>What I built or changed</h2>
+  </div>
+
+  <div class="flow" role="list" aria-label="The revenue system, in order">
+    <div class="step" role="listitem"><span class="k"><b>1</b> Outbound engine</span>Lists, deliverability, programmatic personalization, back-end analytics. 3,500 prospects in month one</div>
+    <div class="step" role="listitem"><span class="k"><b>2</b> ICP, tested</span>Tech companies vs. online stores, two months in parallel; then narrowed round by round to a profile that converted</div>
+    <div class="step" role="listitem"><span class="k"><b>3</b> Sales journey</span>Discovery, presentation, personalized presentation, close; onboarding defined after signature</div>
+    <div class="step" role="listitem"><span class="k"><b>4</b> People</span>An outbound agency to feed the journey; a first BDR hired, trained and managed to work it</div>
+  </div>
+  <p class="small muted">Built in this order. Reach first, so the market could be tested; the journey once we knew who it was for; people last, onto a system that already worked.</p>
+
+  <div class="col">
+    <ul class="plain">
+      <li><strong>Outbound engine.</strong> Contact discovery, sequences, domain security and compliance, warm-up and inbox placement, personalization at scale and the analytics to read it. About 3,500 net-new prospects in the first month, 2,500+ a month after that, at 60%+ open rates and about 5% replies, with near-zero domain burn. Research and personalization per prospect went from about 20 minutes to about 2. 140+ meetings in the first eight months; 40 to 60 a month at run rate.</li>
+      <li><strong>The ICP, as a result rather than a guess.</strong> Two hypotheses run in parallel for two months, the founder's won, and the profile then narrowed with each round until it named owners, overhead, revenue, platform and the shape of their existing customer service. The engine's analytics made each round readable by segment.</li>
+      <li><strong>The test I still quote.</strong> Closing a cold email with a question versus a meeting link. The question got more replies; the link produced more pipeline. We kept the link. The metric you optimize has to be the one that pays, and reply rate is not it.</li>
+      <li><strong>The sales journey and the onboarding path.</strong> Four defined steps from discovery to close, with the deck rebuilt for buyers rather than for explaining the idea, and a written path from signature to a running customer.</li>
+      <li><strong>Pricing, tested three ways.</strong> We tried a fixed rate, then a per-response usage rate, and settled on a flat monthly fee in bands by usage. Fixed was easy to sell and hard to deliver; per-response was fair and impossible to forecast on either side; banded monthly gave the customer a predictable bill and gave us a predictable number.</li>
+      <li><strong>Feedback from the customers we should not have sold.</strong> No lifecycle revenue to report here, but the targeting was refined with the customer-success team on the basis of the accounts that turned out hard to serve. The ICP narrowed from both ends: who replied, and who stayed easy.</li>
+      <li><strong>People onto the system.</strong> Hired, trained and managed the first BDR. Brought on an outbound agency and gave them a three-page brief rather than a call: the ICP, its pain points, our value propositions, the success stories to cite, and the scripts. I have written the scripts at every company I have worked at; the brief is how an agency sells like your own team on day one.</li>
+    </ul>
+
+    <h2>How it ran</h2>
+    <p><b>The engine fed the journey; the journey fed the forecast.</b> Every two to four weeks we built a new outbound list, about 3,500 net-new contacts from Apollo, with the targeting adjusted from the results of the previous one. At run rate that produced roughly a 5% reply rate, about 0.5% booked, and around 70 discovery calls a month, which is one or two closing conversations a day for each of the two account executives. The five-to-one coverage rule told us how many lists we needed; the previous list's results told us who should be on the next one.</p>
+
+    <h2>Result</h2>
+    <p><b>From zero to $2M+ in closed revenue in two years, with two account executives.</b> Revenue was nothing when I started. 140+ meetings in the first eight months, 40 to 60 a month at run rate, a close rate of about 15%, a tested ICP, a pricing model that could be forecast, and a revenue system that an agency and a new BDR could be put onto rather than one that lived in my head. I closed part of the $2M myself; the system is what let two people close the rest.</p>
+
+    <h2>What I'd do differently</h2>
+    <p><b>Take the path of least resistance first, and only then the harder road.</b> I was stubborn about technology companies at the start. I had come from them, I knew how painful customer service was inside them, and I thought it was a real opportunity, which it was. I also knew online stores would be the easier fit. I wanted both revenue streams at once, and for a company of our size that was the wrong instinct: two sellers chasing two markets is one seller in each. The data settled it in two months; the lesson would have settled it in two weeks. Now the question I ask first is not which market is biggest but which one we can win with the people we actually have.</p>
+  </div>
+
+  <div class="pager">
+    <a href="bwz.html">&larr; Black &amp; White Zebra</a>
+    <a href="chef-joey.html">Chef Joey &rarr;</a>
+  </div>
+</main>
+
+<!-- Floating walkthrough. Set data-video to a Loom/YouTube embed URL once recorded; until then the placeholder shows. -->
+<aside class="pip" id="pip" data-video="https://www.youtube-nocookie.com/embed/_5Fv0m91vr4?rel=0&modestbranding=1" aria-label="Video walkthrough">
+  <div class="frame"><div class="ph"><b>Omnie, walkthrough</b>Read along; I'll say where to look.<br>Recording to come.</div></div>
+  <div class="bar"><span>Walkthrough of this page</span><div><button type="button" data-act="size" aria-label="Shrink">&#x2921;</button> <button type="button" data-act="close" aria-label="Close">&times;</button></div></div>
+</aside>
+<button type="button" class="pip-reopen" id="pipReopen">&#9654; Walkthrough</button>
+<script>
+(function(){
+  var p=document.getElementById('pip'),r=document.getElementById('pipReopen');if(!p)return;
+  var src=p.getAttribute('data-video');
+  if(src){var f=p.querySelector('.frame');f.innerHTML='<iframe src="'+src+'" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Video walkthrough"></iframe>';}
+  var key='pip-closed:'+location.pathname;
+  try{if(sessionStorage.getItem(key)){p.classList.add('closed');r.classList.add('show');}}catch(e){}
+  p.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+    if(b.dataset.act==='size'){p.classList.toggle('big');b.setAttribute('aria-label',p.classList.contains('big')?'Enlarge':'Shrink');b.innerHTML=p.classList.contains('big')?'&#x2922;':'&#x2921;';}
+    if(b.dataset.act==='close'){p.classList.add('closed');r.classList.add('show');try{sessionStorage.setItem(key,'1');}catch(e){}}
+  });
+  r.addEventListener('click',function(){p.classList.remove('closed');r.classList.remove('show');try{sessionStorage.removeItem(key);}catch(e){}});
+})();
+</script>
+
+
+<footer class="foot wrap">
+  <div>Zack McGill · Calgary, AB · Revenue operations and GTM systems</div>
+  <div><span class="mono">Zack.m.mcgill@gmail.com</span> · <a href="https://www.linkedin.com/in/zackmcgill">LinkedIn</a></div>
+</footer>
+</body>
+</html>
