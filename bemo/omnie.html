@@ -107,7 +107,7 @@
 <!-- Floating walkthrough. Set data-video to a Loom/YouTube embed URL once recorded; until then the placeholder shows. -->
 <aside class="pip" id="pip" data-video="https://drive.google.com/file/d/1kvE_ICu9sYQlp8yQwR-SDZ2XgnLOncy1/preview" aria-label="Video walkthrough">
   <div class="frame"><div class="ph"><b>Omnie, walkthrough</b>Read along; I'll say where to look.<br>Recording to come.</div></div>
-  <div class="bar"><span>Read along; I'll say where to look.</span><div><button type="button" data-act="size" aria-label="Enlarge">&#x2922;</button> <button type="button" data-act="close" aria-label="Close">&times;</button></div></div>
+  <div class="bar"><span>Read along; I'll say where to look.</span><div><button type="button" data-act="size" aria-label="Shrink">&#x2921;</button> <button type="button" data-act="close" aria-label="Close">&times;</button></div></div>
 </aside>
 <button type="button" class="pip-reopen" id="pipReopen">&#9654; Walkthrough</button>
 <script>
@@ -118,7 +118,7 @@
   var key='pip-closed:'+location.pathname;
   try{if(sessionStorage.getItem(key)){p.classList.add('closed');r.classList.add('show');}}catch(e){}
   p.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
-    if(b.dataset.act==='size'){p.classList.toggle('big');b.setAttribute('aria-label',p.classList.contains('big')?'Shrink':'Enlarge');}
+    if(b.dataset.act==='size'){p.classList.toggle('big');b.setAttribute('aria-label',p.classList.contains('big')?'Enlarge':'Shrink');b.innerHTML=p.classList.contains('big')?'&#x2922;':'&#x2921;';}
     if(b.dataset.act==='close'){p.classList.add('closed');r.classList.add('show');try{sessionStorage.setItem(key,'1');}catch(e){}}
   });
   r.addEventListener('click',function(){p.classList.remove('closed');r.classList.remove('show');try{sessionStorage.removeItem(key);}catch(e){}});
