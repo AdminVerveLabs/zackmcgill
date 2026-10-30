@@ -7268,7 +7268,7 @@ function openGroup(node){
   }).join('');
   var children='<div class="panel"><h3>What rolls up into it</h3><table><thead><tr><th>Driver or lever</th><th>Current</th><th>Goal</th><th>Benchmark</th><th>Status</th></tr></thead><tbody>'+kids+'</tbody></table><div class="note">Click a row to open it.</div></div>';
   cardBody.innerHTML='<div class="grid2">'+read+operating+'</div>'+rollup+children;
-  GC AI.prototype.forEach.call(cardBody.querySelectorAll('.childrow'),function(tr){tr.style.cursor='pointer';tr.onclick=function(){var nmn=tr.getAttribute('data-name');var t=null;for(var k in MAP){if(MAP[k].name===nmn){t=MAP[k];break;}}if(t){var p=t.parent;while(p){p.collapsed=false;p=p.parent;}render();apply();}openCard(nmn);};});
+  Array.prototype.forEach.call(cardBody.querySelectorAll('.childrow'),function(tr){tr.style.cursor='pointer';tr.onclick=function(){var nmn=tr.getAttribute('data-name');var t=null;for(var k in MAP){if(MAP[k].name===nmn){t=MAP[k];break;}}if(t){var p=t.parent;while(p){p.collapsed=false;p=p.parent;}render();apply();}openCard(nmn);};});
   if(typeof closeAbout==='function')closeAbout();
   drawer.classList.add('open');shade.classList.add('open');drawer.setAttribute('aria-hidden','false');
 }
